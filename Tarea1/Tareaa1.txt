@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAREA 1</title>
+</head>
+<body>
+<header><h1><center>Conceptos Html</center></h1></header>
+<hr/>
+
+	<nav>
+		<ul>
+			<li>Inicio</li>
+			<li>Referencias</li>
+			<li>información</li>
+			<li>Etiquetas</li>
+		</ul>
+	</nav>
+<hr/>
+<time  datetime="2020-11-11" pubpdate>
+ Emitido 11-11-2020
+</time>
+<pre>
+<main>
+
+	<p>existen diferentes tipos de <strong>contenedores</strong>, entre los cuales tenemos </br>
+	el div, el section y article, estos se pueden usar para lo mismo, sin embargo,  </br>
+	el motor de busqueda de los <em>navegadores</em> funciona de tal manera que reconoce </br>
+	las etiquetas de formas diferentes dependiendo su sintaxis,  </p>
+	<div>
+		El div es un contenedor universal 
+            <p>En el siguiente documento mostraremos el uso de las etiquetas html </br>
+             su estructura y su funcionamiento</p>
+	</div>
+	<p>
+		<cite>
+		 si <mark>puedes</mark> imaginarlo <mark>puedes</mark> programarlo
+		</cite>
+	<p>
+
+
+
+	<figure>
+		<img src="Fich.jpg" width="300" height="300" usemap="Foto"/>
+			<figcaption>Imagen de Prueba </figcaption>
+		<map name="Foto">
+			<area alt="teclado" title="teclado" href="https://es.wikipedia.org/wiki/Teclado_(inform%C3%A1tica)" shape="circle" coords="0,0,450,150">
+			
+		<map>
+	</figure>
+
+	<figure>
+	<video src="Intro.mp4" poster="Portada.png"  width="300" height="300" controls/>
+		
+	</video>
+	</figure>
+
+	<audio controls="">
+		<source src="Music.mp3">
+	</audio>
+
+<<input></input>
+</main>
+</pre>
+<hr/>
+	
+<Footer>Los Derechos de Autor de este sitio web son reservados a quien corresponda
+	<address> <a href="https://www.facebook.com/" >Contactanos a Facebook</a></address>
+</Footer> 
+
+    
+</body>
+</html>
