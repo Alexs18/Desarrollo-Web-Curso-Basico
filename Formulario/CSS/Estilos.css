@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    
+}
+body{
+    background: url(../Img/Fondo2.jpg);
+    -webkit-background-size:cover;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family:Roboto;
+}
+
+.Principal{
+
+    position: relative;
+    background-color: rgb(221, 229, 240);
+    width: 50%;
+    max-width: 300px;
+    text-align: center;
+
+    margin: 50px auto;
+    color: black;
+    border-radius: 5px;
+    padding: 48px;
+    display: block;
+}
+.Principal .Imagen{
+    width: 100px;
+    height: 100px;
+    border-radius: 56%;
+    position: relative;
+    top: -10px;
+    left: 3%;
+   
+ 
+}
+.Principal .SP{
+    left: 50%;
+}
+
+.Principal h2{
+    margin: 0 0 28px 0;
+    font-size: 20px;
+    font-weight: 400px;
+    line-height: 1;
+
+}
+.Principal input[type="text"],
+.Principal input[type="password"],
+.Principal input [type="email"] {
+
+    outline: none;
+    background: rgba(30, 33, 66, 0.301);
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 2px;
+    border-bottom: orangered;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0 0 20px 0;
+
+}
+.Principal input[type="Submit"]
+{
+    background-color: royalblue;
+    color: blanchedalmond;
+    border: none;
+    width: 100%;
+    padding: 10px 0;
+    font-weight: normal;
+    font-family: Roboto;
+    letter-spacing: 1px;
+    font-size: 16px;
+    cursor: pointer;
+    display: block;
+
+}
