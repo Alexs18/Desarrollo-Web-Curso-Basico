@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="Base" placeholder="Base">
+    <input type="text" id="Altura" placeholder="Altura">
+    <input type="text" id="Result" placeholder="">
+    <button onclick="ObtenerResultado()"> Calcular</button>
+
+    <div id="Resultado"></div>
+
+    <Script>
+
+        function ObtenerResultado ()
+        {
+            var Resultado = document.getElementById("Resultado");
+            var Base = parseInt(document.getElementById("Base").value);
+            var Altura = parseInt(document.getElementById("Altura").value); 
+
+            
+            
+            var Area= (Base*Altura)/2;
+            
+            Resultado.innerHTML = ""+ Area;
+
+            
+
+        }
+    </Script>
+    
+</body>
+</html>

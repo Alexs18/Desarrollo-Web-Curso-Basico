@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <input type="text" id="Number" placeholder="Digite Numero">
+    <button onclick="Raiz()"> Calcular</button>
+    <div id="Result"></div>
+
+
+<script>
+    function Raiz()
+    {
+        var Numero = parseInt(document.getElementById("Number").value);
+        var Result = Math.sqrt(Numero);
+
+       alert(Result.toFixed(3));
+         
+
+
+    }
+
+
+</script>
+    
+</body>
+</html>
