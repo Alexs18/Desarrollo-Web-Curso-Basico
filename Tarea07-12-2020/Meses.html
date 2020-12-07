@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meses</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
+<body>
+    <header>Arrays y Objetos </header>
+
+    <button id="Boton" onclick="MesesMostrar()"> Mostrar Meses</button>
+    <button id="Boton" onclick="ProductosMostrar()"> Mostrar Productos</button>
+
+
+
+
+    <script type="text/javascript">
+        var meses = new Array ("Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio", "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre") ;
+        function MesesMostrar (){
+
+            for (let index = 0; index < meses.length; index++) {
+            alert(meses[index]);
+            
+        }
+
+
+        }
+        
+       
+        function Producto_Alimenticio(codigo, nombre, precio){
+            this.codigo= codigo;
+            this.nombre = nombre;
+            this.precio = precio;
+
+        }
+        var Productos = new Array(3);
+        Productos[0] = new Producto_Alimenticio("1", "Arroz", "25$");
+        Productos[1] = new Producto_Alimenticio("2", "Pollo", "30$");
+        Productos[2] = new Producto_Alimenticio("3", "Manzana", "12$");
+
+        function ProductosMostrar(){
+
+            for (let index = 0; index < Productos.length; index++) {
+            alert("Producto: "+   Productos[index].codigo+  "  Nombre: " + Productos[index].nombre+ "   Precio:   "+ Productos[index].precio);
+            
+            
+        }
+
+
+        }
+        
+        
+
+
+
+
+    </script>
+    
+</body>
+</html>

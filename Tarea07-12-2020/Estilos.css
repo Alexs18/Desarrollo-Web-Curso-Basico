@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body
+{
+    text-align: center;
+    
+    background-color: gray;
+    color: honeydew;
+
+}
+#Boton
+{
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 100;
+    font-size: 16px;
+    color: #e2dddd;
+    background-color: #065c88;
+    border-radius: 6px;
+    border: 2px solid #5f5f70;
+    
+
+
+}
