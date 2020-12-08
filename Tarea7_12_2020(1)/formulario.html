@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./CSS/Estilos.css">
+</head>
+<body>
+    <header> Formulario </header>
+
+    <form action="/my-handling-form-page" method="post" id="Formulario">
+
+        <h2>Ingreso de Datos</h2>
+
+        <label for="number">Numero de Cedúla </label>
+          <input type="number" class="Datos" name="Number">
+
+        <label for="">Apellidos</label>
+          <input type="text" class="Datos" name="Apellidos">
+
+        <label for="name">Nombre</label>
+          <input type="text" class="Datos" name="user_name">
+        
+        <label for="" class="Datos">Estado Civil</label>
+
+        <select name="EstadoCivil" class="Datos">
+
+            <option value="soltero(a)"> soltero </option>
+            <option value="casado(a)"> casado </option>
+            <option value="viudo(a)"> viudo </option>
+            <option value="union_libre(a)"> union_libre </option>
+        </select>
+        
+        <label for="" class="Datos">Sexo</label>
+        <br>
+        
+          <input type="checkbox"  name="masculino" value=""> Masculino
+          <br>
+          <input type="checkbox"  name="femenino"  value=""> Femenino
+          <br>
+
+
+        <label for="" class="Datos" >Ciudad</label>
+        <input type="text" class="Datos" name="ciudad">
+
+
+        <label for="">Direccion</label>
+        <input type="number" class="Datos" name="Direccion">
+        
+        <label for="">Telefono</label>
+        <input type="number"class="Datos" name="Telefono">
+        
+
+        <label for="mail">Correo electrónico</label>
+          <input type="email" class="Datos" name="user_mail">
+
+          
+          <input type="submit" value="Enviar">
+        
+
+
+
+
+    </form>
+    
+    
+</body>
+</html>
