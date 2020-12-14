@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarea8</title>
+        <link rel="stylesheet" href="../Css/Iconos.css">
+        <link rel="stylesheet" href="../Css/Estilos.css">
+        <script src="../Javascript/Main.js"></script>
+        <script src="../Javascript/Nodos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+<body>
+    <header  class="Hijos">
+        <div class="Menu" class="Nietos">
+            <a href="#" class="Boton"> Menu </a>
+            
+        </div>
+        <nav class="Nietos">
+            <ul>
+                <li> <a href="Index.html">Inicio</a> </li>
+                <li onclick="Nodos()" > <a href="">Mostrar Nodos</a> </li>
+                <li><a href="Tablas.html">Tablas</a></li>
+                <li><a href="Esquema.html">Esquema</a></li>
+                <li><a href="Pasos.html">Pasos Nodo</a></li>
+                <li> <a href="Insercion.html"> Inserción</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <section>
+        <div class="Tabla">
+            <p>Esquema sobre las formas de acceder a un nodo en una estructura arbol</p>
+            <table border="1">
+                <tr>
+                    <td> Metodos</td>
+                </tr>
+                <tr>
+                    <td>Acceso</td>
+                    <td>Descripción</td>
+                    <td>Ejemplo</td>
+                </tr>
+                <tr>
+                    <td>getElemenById()</td>
+                    <td>Devuelve el Id a escoger</td>
+                    <td> div id=Valor1 getEelemenById("valor1"); </td>
+                </tr>
+                <tr>
+                    <td>getElementClassName()</td>
+                    <td>Devuelve los elementos cuyo clase este especificado en la etiqueta</td>
+                    <td> div class="Nuevo" getElementClassName("Nuevo") </td>
+                </tr>
+                <tr>
+                    <td>getElementTagName()</td>
+                    <td>Devuelve los elementos con el nombre especificado</td>
+                    <td> div name="Nuevo1" getElementTagName("Nuevo1") </td>
+                </tr>
+                <tr>
+                    <td> childNodes[int]</td>
+                    <td>Devuelve un hijo en una posición proporcionada</td>
+                    <td> document.childNodes[0] en este caso devolvera html</td>
+                </tr>
+    
+            </table>
+            <p> cabe destacar que los elementos con sus Id correspondientes estaran situados en 
+                el archivo .html y los metodos en el archivo .js
+            </p>
+    
+        </div>
+    </section>
+
+    
+</body>
+</html>

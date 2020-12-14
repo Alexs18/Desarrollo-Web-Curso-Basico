@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tarea8</title>
+        <link rel="stylesheet" href="../Css/Iconos.css">
+        <link rel="stylesheet" href="../Css/Estilos.css">
+        <script src="../Javascript/Main.js"></script>
+        <script src="../Javascript/Nodos.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    </head>
+<body>
+    <header  class="Hijos">
+        <div class="Menu" class="Nietos">
+            <a href="#" class="Boton"> Menu </a>
+            
+        </div>
+        <nav class="Nietos">
+            <ul>
+                <li> <a href="Index.html">Inicio</a> </li>
+                <li onclick="Nodos()" > <a href="">Mostrar Nodos</a> </li>
+                <li><a href="Tablas.html">Tablas</a></li>
+                <li><a href="Esquema.html">Esquema</a></li>
+                <li><a href="Pasos.html">Pasos Nodo</a></li>
+                <li> <a href="Insercion.html"> Inserción</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <div id="Agregar">
+
+    </div>
+    <section>
+        <div class="Contenedor">
+            <p>Pasos para la Creación de un Nodo</p>
+            <ul>
+               <li> Se crea la etiqueta con las propiedades createElement() y se lo almacena en una variable </li>
+               <p>Ejemplo: var NuevoNodo = document.CreateElement("p");</p>
+               <li>Se le asigna un contenido a la etiqueta por medio de la propiedad CreateTextNode() y le colocamos el contenido</li>
+               <p>Ejemplo: var Contenido = document.CreateTextNode("Este es un nuevo msj"); </p>
+               <li>Luego se le asigna el contenido a el nodo creado con anterioridad</li>
+               <p> Ejemplo: NuevoNodo.appendChild(Contenido);</p>
+            </ul>
+            <input type="button" value="Ejemplo Crear" name="EjemploCrear" onclick="Creacion()">
+            <p>Pasos para la eliminación de un nodo</p>
+            <ul>
+                <li>Procedemos a Localizar el nodo que queremos eliminar </li>
+                <li>Lo guardamos en una variable</li>
+                <p>ejemplo var NuevoEliminado = document.getElementById("NuevoNodo");</p>
+                <li>Procedemos a removerlo</li>
+                <p>NuevoEliminado.parentNode.removeChild(NuevoEliminado)</p>
+                <p>Cabe destacar que los eliminados pueden ser accedidos por todas las propiedades que 
+                    se visualizaron en <a href="Esquema.html">Esquemas</a>
+                </p>
+    
+            </ul>
+            <input type="button" id="Eliminar" value="Ejemplo Eliminar" name="EjemploEliminar " onclick="Eliminacion()">
+    
+        </div>
+    </section>
+    
+</body>
+</html>

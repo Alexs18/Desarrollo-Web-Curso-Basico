@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tarea8</title>
+
+    <link rel="stylesheet" href="../Css/Iconos.css">
+    <link rel="stylesheet" href="../Css/Estilos.css">
+    <script src="../Javascript/Main.js"></script>
+    <script src="../Javascript/Nodos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</head>
+<body>
+
+    <header  class="Hijos">
+        <div class="Menu" class="Nietos">
+            <a href="#" class="Boton"> Menu </a>
+            
+        </div>
+        <nav class="Nietos">
+
+
+            <ul>
+                <li> <a href="Index.html">Inicio</a> </li>
+                <li onclick="Nodos()" > <a href="">Mostrar Nodos</a> </li>
+                <li > <a href="Tablas.html">Tablas</a></li>
+                <li><a href="Esquema.html">Esquema</a></li>
+                <li><a href="Pasos.html">Pasos Nodo</a></li>
+                <li> <a href="Insercion.html"> Inserción</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <input type="button" value="Crear" name="Crear" onclick="Creacion()">
+
+    <div id="Agregar">
+
+    </div>
+
+
+
+
+    <section >
+        <div class="Tabla">
+        <p>
+            Una vez que DOM ha creado de forma automática el árbol completo de nodos de la página, ya es posible utilizar sus funciones para obtener información sobre los nodos o manipular su contenido. JavaScript crea el objeto Node para definir las propiedades y métodos necesarios para procesar y manipular los documentos.
+            En primer lugar, el objeto Node define las siguientes constantes para la identificación de los distintos tipos de nodos:
+        </p>
+        <h2>Interfaz Nodo</h2>
+        <table border="1">
+            <tr>
+                <td>Constante</td>
+                <td>Valor</td>
+            </tr>
+            <tr>
+                <td>Node.ELEMENT_NODE</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td> Node.ATTRIBUTE_NODE </td>
+                <td>2 </td>
+            </tr>
+            <tr>
+                <td>Node.TEXT_NODE </td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Node.CDATA_SECTION_NODE </td>
+                <td>4</td>
+            </tr>
+            <tr>
+                <td>Node.ENTITY_REFERENCE_NODE</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>Node.ENTITY_NODE</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>Node.PROCESSING_INSTRUCTION_NODE </td>
+                <td>7</td>
+            </tr>
+            <tr>
+                <td>Node.COMMENT_NODE</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Node.DOCUMENT_NODE </td>
+                <td>9</td>
+            </tr>
+            <tr>
+                <td>Node.DOCUMENT_TYPE_NODE</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>Node.DOCUMENT_FRAGMENT_NODE</td>
+                <td>11</td>
+            </tr>
+            <tr>
+                <td>Node.NOTATION_NODE</td>
+                <td>12</td>
+            </tr>
+        </table>
+    </div>
+    <div class="Tabla">
+        <p>Podemos Observar las siguientes propiedades con sus valores correspodnientes</p>
+        <table border="1">
+            <tr>
+                <td> Propiedad/Metodo</td>
+                <td> Valor Devuelto </td>
+                <td>Descripción</td>
+            </tr>
+            <tr>
+                <td> nodeName </td>
+                <td> string </td>
+                <td>El nombre del nodo (no está definido para algunos tipos de nodo)</td>
+            </tr>
+            <tr>
+                <td> nodeValue </td>
+                <td> string</td>
+                <td> 	El valor del nodo (no está definido para algunos tipos de nodo)</td>
+            </tr>
+            <tr>
+                <td> nodetype </td>
+                <td> Number </td>
+                <td>Una de las 12 constantes definidas anteriormente</td>
+            </tr>
+            <tr>
+                <td>ownerDocument </td>
+                <td> Document </td>
+                <td>Referencia del documento al que pertenece el nodo</td>
+            </tr>
+            <tr>
+                <td> firstchild </td>
+                <td> Node </td>
+                <td>Referencia del primer nodo de la lista childNodes</td>
+            </tr>
+            <tr>
+                <td> lastChild </td>
+                <td> Node</td>
+                <td>Referencia del último nodo de la lista childNodes</td>
+            </tr>
+            <tr>
+                <td> ChilNodes </td>
+                <td> NodeList </td>
+                <td>Lista de todos los nodos hijo del nodo actual</td>
+            </tr>
+            <tr>
+                <td> previousSibling </td>
+                <td> Node </td>
+                <td>Referencia del nodo hermano anterior o null si este nodo es el primer hermano</td>
+            </tr>
+            <tr>
+                <td> nextSibling</td>
+                <td> Node</td>
+                <td>Referencia del nodo hermano siguiente o null si este nodo es el último hermano</td>
+            </tr>
+            <tr>
+                <td> hasChildNodes </td>
+                <td> Bolean </td>
+                <td>Devuelve true si el nodo actual tiene uno o más nodos hijo</td>
+            </tr>
+            <tr>
+                <td> attributes </td>
+                <td> NamedNoeMap </td>
+                <td> Se emplea con nodos de tipo Element. Contiene objetos de tipo Attr que definen todos los atributos del elemento</td>
+            </tr>
+            <tr>
+                <td> appendChild(nodo) </td>
+                <td> Node </td>
+                <td>Añade un nuevo nodo al final de la lista childNodes</td>
+            </tr>
+            <tr>
+                <td> removeChild(nodo)</td>
+                <td> Node </td>
+                <td>Elimina un nodo de la lista childNodes</td>
+            </tr>
+
+            <tr>
+                <td> replaceChild(nuevoNodo, anteriorNodo)</td>
+                <td> Node </td>
+                <td>Reemplaza el nodo anteriorNodo por el nodo nuevoNodo</td>
+            </tr>
+            <tr>
+                <td> insertBefore(nuevoNodo, anteriorNodo)</td>
+                <td> Node </td>
+                <td>Inserta el nodo nuevoNodo antes que la posición del nodo anteriorNodo dentro de la lista childNodes</td>
+            </tr>
+
+
+        </table>
+    </div>
+
+    <div>
+   
+    
+
+
+
+
+
+    </section>
+    
+
+
+    
+</body>
+</html>
