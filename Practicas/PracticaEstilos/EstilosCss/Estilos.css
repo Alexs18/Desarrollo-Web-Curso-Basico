@@ -1,0 +1,45 @@
+body
+{
+    background-color:white;
+    color: chartreuse;
+}
+* {
+    margin: 12;
+    padding: 90;
+}
+header
+{
+    font-size: 50px;
+
+}
+p
+{
+    color: crimson;
+    font-size: 50px;
+
+}
+#Menu
+{
+    margin-left: 50px;
+    border-radius: 30px;
+    border-color: teal;
+    font-size: 35px;
+    color: darkblue;
+    background-color: darkgray;
+
+}
+#Noticias
+{
+    left: 50%;
+    font-size: 40px;
+    color: darkgrey;
+    background-color: darkslategrey;
+    width: 50%;
+}
+#Farandula
+{
+    font-size: 40px;
+    color: darkgrey;
+    background-color: darksalmon;
+    width: 50%;
+}

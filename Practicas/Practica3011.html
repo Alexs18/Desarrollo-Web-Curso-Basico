@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajo Autonomo</title>
+</head>
+<body>
+    <header> Tarea 30-11-2020</header>
+    <Div id="Menu">
+    <nav>
+        <ul>
+            <li>
+               Primer Caso
+            </li>
+            <li>
+                Segundo caso
+            </li>
+        </ul>
+    </nav>
+    </div>
+
+
+    <button onclick="General()">Bienvenido a la Tarea</button>
+
+
+
+
+    <div id="Segundo Caso">
+       
+        <input type="text" id="Base" placeholder="Base">
+       <input type="text" id="Altura" placeholder="Altura">
+        <input type="text" id="Result" placeholder="">
+        <button onclick="ObtenerResultado()"> Calcular</button>
+
+         <div id="Resultado"></div>
+    </div>
+    <div id="Tercer Caso">
+        <input type="text" id="Number" placeholder="Digite Numero">
+    <button onclick="Raiz()"> Calcular</button>
+    <div id="Result"></div>
+
+        
+    </div>
+    <div id="Cuarto Caso">
+
+        <button onclick="Arrays()"> Longitud de Cadena</button>
+        
+    </div>
+    <div id="Quinto Caso">
+
+        <button onclick="Concatenar1()"> Concatenar</button>
+        
+    </div>
+
+
+
+
+
+    <button onclick="Imprimir"> Imprimir la pantalla</button>
+
+
+    <script type="text/javascript">
+
+        var seconds= 3600;
+        var Fecha = new Date();
+    
+        var hora= Fecha.getHours() -12 ;
+        
+        document.write("La Fecha Actual es: " + Fecha);
+        document.write("La hora en segundos es: " + hora*seconds);
+    
+    
+    </script>
+    
+   <script>
+       
+    function General(){
+
+   
+    function ObtenerResultado ()
+        {
+            var Resultado = document.getElementById("Resultado");
+            var Base = parseInt(document.getElementById("Base").value);
+            var Altura = parseInt(document.getElementById("Altura").value); 
+
+            
+            
+            var Area= (Base*Altura)/2;
+            
+            Resultado.innerHTML = ""+ Area;
+
+            
+
+        }
+
+        function Raiz()
+    {
+        var Numero = parseInt(document.getElementById("Number").value);
+        var Result = Math.sqrt(Numero);
+
+       alert(Result.toFixed(3));
+         
+
+
+    }
+    function Arrays()
+    {
+
+        var Cadena = prompt("Ingrese la Cadena de texto");
+        alert(Cadena.length)
+
+
+    }
+
+
+    function Concatenar1()
+    {
+
+        const array1 = ['Lunes', 'Martes','Miercoles','Jueves','Viernes'];
+        const array2 = ['Sabado','Domingo'];
+        const array3 =  array1.concat(array2);
+        alert(array3);
+        
+
+    }
+
+
+    
+    function Imprimir()
+    {
+        if(window.print)
+        {
+            window.print();
+        }
+    }
+
+
+    document.write("Datos del Navegador: " +  navigator.userAgent);
+
+    document.write("Resolucion de la pantalla: " + screen.height + "x"+ screen.width);
+}
+
+
+
+   </script>
+
+    
+
+
+
+    
+    
+</body>
+</html>
